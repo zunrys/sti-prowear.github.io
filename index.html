@@ -6,7 +6,7 @@
 	<body>
 		<div id="sti-logo"></div>
 		
-		<form>
+		<form name="startingpage" action="signup.html">
 			<label for="name">Name</label>
 			<input type="text" id="name" name="studentname" placeholder="LAST NAME, First Name M.I.">
 			
@@ -19,8 +19,7 @@
 				<option value="College">College</option>
 			</select>
 			
-			<button onclick="signUp()">Sign Up</button>
-			<button onclick="signIn()">Sign In</button>
+			 <input type="submit" value="Submit">
 			
 		</form>
 		
@@ -51,15 +50,6 @@
 				option.value = value;
 				option.text = text;
 				selectElement.add(option);
-			}
-			
-			function signIn() {
-				alert("Signed In successfully");
-			}
-			
-			function signUp() {
-				alert("Sign Up button clicked!");
-				window.location.href = "signup.html";
 			}
 			
 			
