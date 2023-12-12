@@ -1,1 +1,1 @@
-# sti-prowear.github.io
+# give up na po kami
