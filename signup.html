@@ -1,0 +1,136 @@
+<html>
+	
+	<head>
+	</head>
+	
+	<body>
+		<div id="sti-logo"></div>
+		
+		<form action="/next_page.php">
+			<label for="name">Name</label>
+			<input type="text" id="name" name="studentname" placeholder="LAST NAME, First Name M.I.">
+			
+			<label for="name">Student No.</label>
+			<input type="text" id="studentno" name="studentnumber" placeholder="ex. 02000243149">
+			
+			<label for="name">Grade Lvl.</label>
+			<select id="grdlvl">
+				<option value="SHS">Senior High School</option>
+				<option value="College">College</option>
+			</select>
+			
+			<button onclick="signUp()">Sign Up</button>
+			
+			<button onclick="signIn()">Sign In</button>
+			
+		</form>
+		
+		<script>
+			
+			function populateSecondSelect() {
+				var firstSelect = document.getElementById("firstSelect");
+				var secondSelect = document.getElementById("secondSelect");
+				
+				secondSelect.innerHTML = "";
+				
+				var selectedCourse = firstSelect.value;
+				if (selectedCourse === "College") {
+					addOption(
+					secondSelect,
+					"BSIT",
+					"Bachelor Of Science In Information Technology"
+					);
+					addOption(secondSelect, "BSCS", "Bachelor Of Science In Computer Science");
+					} else if (selectedCourse === "Senior High") {
+					addOption(secondSelect, "ABM", "ABM");
+					addOption(secondSelect, "ICT", "ICT");
+				}
+			}
+			
+			function addOption(selectElement, value, text) {
+				var option = document.createElement("option");
+				option.value = value;
+				option.text = text;
+				selectElement.add(option);
+			}
+			
+			function signIn() {
+				alert("Signed In successfully");
+			}
+			
+			function signUp() {
+				alert("Sign Up button clicked!");
+				window.location.href = "Signup.html";
+			}
+			
+			
+		</script>
+		
+		<style>
+			body {
+			background: url(https://one.sti.edu/images/bg_1.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			min-height: 100vh;
+			}
+			
+			#sti-logo {
+			margin-top: 10pt;
+			background-image: url(https://upload.wikimedia.org/wikipedia/en/1/1f/Systems_Technology_Institute.png);
+			background-repeat: no-repeat;
+			height: 161px;
+			}
+			
+			form {
+			float: right;
+			}
+			
+			label {
+			background-color: rgba(255, 255, 255, 0);
+			}
+			
+			input[type="text"],
+			select {
+			width: 500px;
+			padding: 10px;
+			margin-bottom: 15px;
+			display: block;
+			}
+			
+			select {
+			width: 525px;
+			cursor: pointer;
+			}
+			
+			button {
+			font-size: 16px;
+			padding: 10px 20px;
+			width: 259px;
+			height: 40px;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+			margin-top: 10px;
+			background-color: #3498db;
+			color: #000;
+			transition: background-color 0.3s, color 0.3s;
+			}
+			
+			button:hover {
+			background-color: #ffff00;
+			color: #000;
+			}
+			
+			button:active {
+			background-color: #21618c;
+			color: #000;
+			}
+			
+		</style>
+		
+		
+		
+	</body>
+	
+	
+</html>
