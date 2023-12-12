@@ -4,7 +4,7 @@
 	</head>
 	
 	<body>
-		<div id="sti-logo"></div>
+			<div id="sti-logo"></div>
 		
 		<form name="startingpage" action="signup.html">
 			<label for="name">Name</label>
@@ -13,61 +13,33 @@
 			<label for="name">Student No.</label>
 			<input type="text" id="studentno" name="studentnumber" placeholder="ex. 02000243149">
 			
-			<label for="name">Grade Lvl.</label>
+			<label for="name">Grade level:</label>
 			<select id="grdlvl">
 				<option value="SHS">Senior High School</option>
 				<option value="College">College</option>
 			</select>
 			
+      <button onclick="signUp()">Sign Up</button>
 			 <input type="submit" value="Submit">
 			
 		</form>
 		
-		<script>
-			
-			function populateSecondSelect() {
-				var firstSelect = document.getElementById("firstSelect");
-				var secondSelect = document.getElementById("secondSelect");
-				
-				secondSelect.innerHTML = "";
-				
-				var selectedCourse = firstSelect.value;
-				if (selectedCourse === "College") {
-					addOption(
-					secondSelect,
-					"BSIT",
-					"Bachelor Of Science In Information Technology"
-					);
-					addOption(secondSelect, "BSCS", "Bachelor Of Science In Computer Science");
-					} else if (selectedCourse === "Senior High") {
-					addOption(secondSelect, "ABM", "ABM");
-					addOption(secondSelect, "ICT", "ICT");
-				}
-			}
-			
-			function addOption(selectElement, value, text) {
-				var option = document.createElement("option");
-				option.value = value;
-				option.text = text;
-				selectElement.add(option);
-			}
-			
-			
-		</script>
-		
 		<style>
 			body {
-			background: url(https://one.sti.edu/images/bg_1.jpg);
-			background-repeat: no-repeat;
-			background-size: cover;
-			min-height: 100vh;
+  background: url(https://cdn.discordapp.com/attachments/1150585030830203023/1184139858206277712/bck2.jpg?ex=658ae32e&is=65786e2e&hm=de36c594c246fc4ff6b35365ef756c75e748855ded92a1112f6e3e6ad87fdd43&);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
 			}
 			
 			#sti-logo {
-			margin-top: 10pt;
-			background-image: url(https://upload.wikimedia.org/wikipedia/en/1/1f/Systems_Technology_Institute.png);
-			background-repeat: no-repeat;
-			height: 161px;
+		  margin-top: 10pt;
+  margin-left: 1300px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/1/1f/Systems_Technology_Institute.png);
+  background-repeat: no-repeat;
+  background-size: contain; 
+  height: 161px;
+  width: 200px; 
 			}
 			
 			form {
@@ -114,7 +86,22 @@
 			background-color: #21618c;
 			color: #000;
 			}
-			
+
+			input[type=submit] {
+  			font-size: 16px;
+ 	         	width: 259px;
+  			background-color: #3498db;
+  			color: #000;
+  			padding: 10px 20px;
+		 	height: 40px;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+			}
+			input[type=submit]:hover {
+			background-color: #ffff00;
+			color: #000; 
+			}
 		</style>
 		
 		
