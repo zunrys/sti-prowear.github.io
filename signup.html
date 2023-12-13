@@ -1,0 +1,164 @@
+<html>
+	
+	<head>
+		<script>
+			function populateSecondSelect() {
+				var firstSelect = document.getElementById("firstSelect");
+				var secondSelect = document.getElementById("secondSelect");
+				
+				secondSelect.innerHTML = "";
+				
+				var selectedCourse = firstSelect.value;
+				if (selectedCourse === "College") {
+					addOption(
+					secondSelect,
+					"BSIT",
+					"Bachelor Of Science In Information Technology"
+					);
+					addOption(secondSelect, "BSCS", "Bachelor Of Science In Computer Science");
+					} else if (selectedCourse === "Senior High") {
+					addOption(secondSelect, "ABM", "ABM");
+					addOption(secondSelect, "ICT", "ICT");
+				}
+			}
+			
+			function addOption(selectElement, value, text) {
+				var option = document.createElement("option");
+				option.value = value;
+				option.text = text;
+				selectElement.add(option);
+			}
+			
+			populateSecondSelect();
+			
+			function signIn() {
+				alert("You have Signed In!");
+			}
+			
+			function signUp() {
+				var ask = window.confirm("You have signed up! Click to continue.");
+				
+				if (ask) {
+					window.location.href = "gender.html";
+				}
+			}
+			
+		</script>
+		
+		<style>
+			body {
+			form {
+			float: left;
+			margin-left: 500px;
+			font-family: sans-serif;
+			color: #FFF;
+			}
+			
+			background: url(https://cdn.discordapp.com/attachments/1155143207181619262/1184163005462753290/Untitled18_20231213000046.png?ex=658af8bd&is=657883bd&hm=e6a86eb41a5ff89e9e1915bcc4bec5d57b84aff473a3806a5ee279b15a0aeef3&);
+			background-repeat: no-repeat;
+			background-size: cover;
+			min-height: 100vh;
+			}
+			.container {
+			display: flex;
+			align-items: center;
+			}
+			
+			#sti-logo {
+			
+			margin-top: 0;
+			background-image: url(https://upload.wikimedia.org/wikipedia/en/1/1f/Systems_Technology_Institute.png);
+			background-repeat: no-repeat;
+			background-size: contain; 
+			height: 161px;
+			width: 200px; 
+            
+			}
+			
+			label {
+			background-color: rgba(255, 255, 255, 0);
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+			font-size: 16px;
+			}
+			
+			#signUp {
+			font-size: 30px; /* Set a different font size for this label */
+			color: #0; /* Set a specific color if needed */
+			/* Add any other styles as needed */
+			}
+			
+			input[type="text"],
+			select {
+			width: 500px;
+			padding: 10px;
+			margin-bottom: 15px;
+			display: block;
+			}
+			
+			select {
+			width: 500px;
+			cursor: pointer;
+			}
+			
+			button {
+			font-size: 16px;
+			padding: 10px 20px;
+			width: 500px;
+			height: 40px;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+			margin-top: 10px;
+			background-color: #ffff00;
+			color: #000;
+			transition: background-color 0.3s, color 0.3s;
+			}
+			
+			button:hover {
+			background-color: #3498db;
+			color: #000;
+			}
+			
+			button:active {
+			background-color: #21618c;
+			color: #000;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="sti-logo"></div>
+		
+		<form action="/next_page.php">
+			
+			<label for="signUp" id="signUp">Sign Up</label>
+			
+			<br>
+			
+			<label for="name">Name</label>
+			<input type="text" id="name" name="studentname" placeholder="LAST NAME, First Name M.I.">
+			
+			<label for="name">Student No.</label>
+			<input type="text" id="studentno" name="studentnumber" placeholder="ex. 02000243149">
+			
+			<!-- try-->
+			<label for="firstSelect">Grade Level:</label>
+			<select id="firstSelect" onchange="populateSecondSelect()">
+				<option value="College">College</option>
+				<option value="Senior High">Senior High School</option>
+			</select>
+			
+			<label for="secondSelect">Course or Strand:</label>
+			<select id="secondSelect"></select>
+			
+			<script src="script.js"></script>		
+			
+		</form>
+		
+		<button onclick="signUp()" style="position: relative; top: 350px; right: 500px;">Sign Up</button>
+		
+	</body>
+	
+</html>
