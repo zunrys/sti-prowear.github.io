@@ -37,7 +37,10 @@
 			}
 		</style>
 		
-		<script>
+		<script src="costing.js"></script>
+		
+		<script>	
+
 			function yes() {
 				var ask = window.confirm("Once you click OK, you cannot refund these items!");
 				
@@ -45,14 +48,12 @@
 					window.location.href="reserved.html";
 				}
 			}
-			
-
 		</script>
 	</head>
 	
 	<body>
 		
-		<p style="text-align: center; position: relative; top: 200px;">This will cost [number] in total.</p>
+		<p style="text-align: center; position: relative; top: 200px;">This will cost <script type="text/javascript">document.write(total)</script> in total.</p>
 		<p style="text-align: center; position: relative; top: 205px;">Are you sure you want to reserve these items?</p>
 		<br>
 		<center style="position: relative; top: 205px;">
