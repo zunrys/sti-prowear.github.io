@@ -2,19 +2,50 @@
 
 <html>
 	<head>
-		<script>
+		<!-- <script>
 			function signUp() {
-				window.location.href = "signup.html";
+			window.location.href = "signup.html";
 			}
-		</script>
+		</script> -->
 		
 		<style>
+			
 			body {
 			background: url(https://cdn.discordapp.com/attachments/1150585030830203023/1184139858206277712/bck2.jpg?ex=658ae32e&is=65786e2e&hm=de36c594c246fc4ff6b35365ef756c75e748855ded92a1112f6e3e6ad87fdd43&);
 			background-repeat: no-repeat;
 			background-size: cover;
 			min-height: 100vh;
 			font-family: sans-serif;
+			}
+			
+			#navbar {
+			width: 100%;
+			background-color: #FFFFFF;
+			padding: 2px;
+			}
+			
+			#navbar ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			}
+			
+			#navbar li {
+			float: left;
+			margin-right: 20px;
+			}
+			
+			#navbar li a {
+			color: #202020;
+			display: block;
+			padding: 8px;
+			text-decoration: none;
+			}
+			
+			#navbar li a:hover {
+			background-color: #202020;
+			color: #FFFFFF;
 			}
 			
 			#sti-logo {
@@ -91,26 +122,29 @@
 	</head>
 	
 	<body>
+		<div id="navbar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="sizeguide.html">Size Guide</a></li>
+			</ul>
+		</div>
+		
 		<div id="sti-logo"></div>
 		<p></p>
 		<p></p>
 		
-		<form name="login-form" action="gender.html">
+		<form name="login-form" action="gradelvl.html">
 			<label for="name">Name</label>
 			<input type="text" id="name" name="studentname" placeholder="LAST NAME, First Name M.I.">
 			
 			<label for="studentid">Student No.</label>
 			<input type="text" id="studentNo" name="studentnumber" placeholder="ex. 02000243149">
 			
-			<label for="gradelvl">Grade Level</label>
-			<select id="grdlvl">
-				<option value="SHS">Senior High School</option>
-				<option value="College">College</option>
-			</select>
-		
-		<input type="submit" value="Sign In" style="position: relative; right: -275px;">
+			<input type="submit" value="Sign In" style="position: relative; right: -135px;">
 		</form>
-		<button onclick="signUp()" style="position: relative; top: 208px; right: -1050px;">Sign Up</button>
+		
+		<!--  button onclick="signUp()" style="position: relative; top: 135px; right: -1050px;">Sign Up</button> -->
 		
 	</body>
 </html>
