@@ -1,35 +1,35 @@
 <html>
 	
-    <head>
+	<head>
 		<style>
-			
 			form {
-			margin: auto;
-			text-align: center;
+            margin: auto;
+            text-align: center;
 			}
 			
 			table {
-			margin: auto;
+            margin: auto;
 			}
 			
 			td {
-			text-align: center;
-			width: 200px;
-			padding: 10pt;
+            text-align: center;
+            width: 200px;
+            padding: 10pt;
 			}
 			
 			body {
-			background: url(https://cdn.discordapp.com/attachments/1155143207181619262/1184163005462753290/Untitled18_20231213000046.png?ex=658af8bd&is=657883bd&hm=e6a86eb41a5ff89e9e1915bcc4bec5d57b84aff473a3806a5ee279b15a0aeef3&);
-			background-repeat: no-repeat;
-			background-size: cover;
-			font-family: sans-serif;
-			color: #FFF;
+            background: url(https://cdn.discordapp.com/attachments/1155143207181619262/1184163005462753290/Untitled18_20231213000046.png?ex=658af8bd&is=657883bd&hm=e6a86eb41a5ff89e9e1915bcc4bec5d57b84aff473a3806a5ee279b15a0aeef3&);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: sans-serif;
+            color: #FFF;
 			}
 			
 			.container {
-			display: flex;
-			align-items: center;
+            display: flex;
+            align-items: center;
 			}
+			
 			/* label {
 			background-color: rgba(255, 255, 255, 0);
 			display: inline-block;
@@ -40,155 +40,174 @@
 			}
 			*/
 			#male {
-			/* display: inline-block; */
-			text-align: center;
-			margin-right: 90px;
-			font-size: 15px
+            /* display: inline-block; */
+            text-align: center;
+            margin-right: 90px;
+            font-size: 15px
 			}
+			
 			#Fmale {
-			/* display: inline-block; */
-			text-align: center;
-			margin-left: 1px;
-			font-size: 15px
+            /* display: inline-block; */
+            text-align: center;
+            margin-left: 1px;
+            font-size: 15px
 			}
+			
 			#uniForm {
-			font-size: 30px; /* Set a different font size for this label */
-			color: #0; /* Set a specific color if needed */
-			/* Add any other styles as needed */
+            font-size: 30px;
+            /* Set a different font size for this label */
+            color: #0;
+            /* Set a specific color if needed */
+            /* Add any other styles as needed */
 			}
 			
 			#sti-logo {
-			margin-top: 0;
-			background-image: url(https://upload.wikimedia.org/wikipedia/en/1/1f/Systems_Technology_Institute.png);
-			background-repeat: no-repeat;
-			background-size: contain;
-			height: 161px;
-			width: 200px;
+            margin-top: 0;
+            background-image: url(https://upload.wikimedia.org/wikipedia/en/1/1f/Systems_Technology_Institute.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 161px;
+            width: 200px;
 			}
 			
 			.image-container {
-			display: flex;
+            display: flex;
 			}
 			
 			.image-box {
-			margin-right: 9px;
-			margin-left: 5.9px; 
+            margin-right: 9px;
+            margin-left: 5.9px;
 			}
 			
 			.image-box img {
-			width: 200px; /* Adjust the width as needed */
-			height: 200px; /* Adjust the height as needed */
-			border: 1px solid #ccc;
-			border-radius: 4px;
+            width: 200px;
+            /* Adjust the width as needed */
+            height: 200px;
+            /* Adjust the height as needed */
+            border: 1px solid #ccc;
+            border-radius: 4px;
 			}
 			
 			#uniForm {
-			text-align: center; /* Center the text within the label */
-			display: block; /* Make the label a block element */
-			margin: 0 auto; /* Center the block element */
+            text-align: center;
+            /* Center the text within the label */
+            display: block;
+            /* Make the label a block element */
+            margin: 0 auto;
+            /* Center the block element */
 			}
 			
 			button {
-			font-size: 16px;
-			padding: 10px 20px;
-			width: 249px;
-			height: 40px;
-			border: none;
-			border-radius: 10px;
-			cursor: pointer;
-			margin-top: 10px;
-			margin: auto;
-			background-color: #3498db;
-			color: #000;
-			transition: background-color 0.3s, color 0.3s;
+            font-size: 16px;
+            padding: 10px 20px;
+            width: 249px;
+            height: 40px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin: auto;
+            background-color: #3498db;
+            color: #000;
+            transition: background-color 0.3s, color 0.3s;
 			}
 			
 			button:hover {
-			background-color: #ffff00;
-			color: #000;
+            background-color: #ffff00;
+            color: #000;
 			}
 			
 			button:active {
-			background-color: #21618c;
-			color: #000;
+            background-color: #21618c;
+            color: #000;
 			}
 			
 			input[type=submit] {
-			font-size: 16px;
-			width: 181px;
-			background-color: #ffff00;
-			color: #000;
-			padding: 10px 20px;
-			height: 40px;
-			border: none;
-			border-radius: 10px;
-			cursor: pointer;
+            font-size: 16px;
+            width: 181px;
+            background-color: #ffff00;
+            color: #000;
+            padding: 10px 20px;
+            height: 40px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
 			}
+			
 			input[type=submit]:hover {
-			background-color: #3498db;
-			color: #000; 
+            background-color: #3498db;
+            color: #000;
 			}
 		</style>
 		
 		<script src="costing.js"> </script>
-		<script>function calculateTotal() {
-			var smallPoloQuantity = parseInt(document.getElementById("smallPoloQuantity").value) || 0;
-			var smallPantsQuantity = parseInt(document.getElementById("smallPantsQuantity").value) || 0;
-			var mediumPoloQuantity = parseInt(document.getElementById("mediumPoloQuantity").value) || 0;
-			var mediumPantsQuantity = parseInt(document.getElementById("mediumPantsQuantity").value) || 0;
-			var largePoloQuantity = parseInt(document.getElementById("largePoloQuantity").value) || 0;
-			var largePantsQuantity = parseInt(document.getElementById("largePantsQuantity").value) || 0;
-			var necktieQuantity = parseInt(document.getElementById("necktieQuantity").value) || 0;
-			
-			var smallPoloCost = 600.00;
-			var smallPantsCost = 405.00;
-			var mediumPoloCost = 630.00;
-			var mediumPantsCost = 430.00;
-			var largePoloCost = 950.00;
-			var largePantsCost = 470.00;
-			var necktieCost = 85.00;
-			
-			var totalCost = (
-            smallPoloQuantity * smallPoloCost + smallPantsQuantity * smallPantsCost +
-            mediumPoloQuantity * mediumPoloCost + mediumPantsQuantity * mediumPantsCost +
-            largePoloQuantity * largePoloCost + largePantsQuantity * largePantsCost +
-            necktieQuantity * necktieCost
-			);
-			
-			document.getElementById("totalCost").innerHTML = totalCost.toFixed(2);
-		} </script>
+		<script>
+			function calculateTotal() {
+				var smallBlouseQuantity = parseInt(document.getElementById("smallBlouseQuantity").value) || 0;
+				var smallPantsQuantity = parseInt(document.getElementById("smallPantsQuantity").value) || 0;
+				var mediumBlouseQuantity = parseInt(document.getElementById("mediumBlouseQuantity").value) || 0;
+				var mediumPantsQuantity = parseInt(document.getElementById("mediumPantsQuantity").value) || 0;
+				var largeBlouseQuantity = parseInt(document.getElementById("largeBlouseQuantity").value) || 0;
+				var largePantsQuantity = parseInt(document.getElementById("largePantsQuantity").value) || 0;
+				var smallPEshirtQuantity = parseInt(document.getElementById("smallPEshirtQuantity").value) || 0;
+				var smallPEPantsQuantity = parseInt(document.getElementById("smallPEPantsQuantity").value) || 0;
+				var medPEshirtQuantity = parseInt(document.getElementById("medPEshirtQuantity").value) || 0;
+				var medPEPantsQuantity = parseInt(document.getElementById("medPEPantsQuantity").value) || 0;
+				var necktieQuantity = parseInt(document.getElementById("necktieQuantity").value) || 0;
+				
+				var smallBlouseCost = 600.00;
+				var smallPantsCost = 405.00;
+				var mediumBlouseCost = 630.00;
+				var mediumPantsCost = 430.00;
+				var largeBlouseCost = 950.00;
+				var largePantsCost = 470.00;
+				var smallPEshirtCost = 175.00;
+				var smallPEPantsCost = 300.00;
+				var medPEshirtCost = 200.00;
+				var medPEPantsCost = 415.00
+				var necktieCost = 85.00;
+				
+				var totalCost = (
+                smallBlouseQuantity * smallBlouseCost + smallPantsQuantity * smallPantsCost +
+                mediumBlouseQuantity * mediumBlouseCost + mediumPantsQuantity * mediumPantsCost +
+                largeBlouseQuantity * largeBlouseCost + largePantsQuantity * largePantsCost +
+                smallPEshirtQuantity * smallPEshirtCost + smallPEPantsQuantity * smallPEPantsCost +
+                medPEshirtQuantity * medPEshirtCost + medPEPantsQuantity * medPEPantsCost +
+                necktieQuantity * necktieCost
+				);
+				
+				
+				document.getElementById("totalCost").innerHTML = totalCost.toFixed(2);
+			}
+		</script>
 	</head>
 	
-    <body>
+	
+	<body>
 		<div id="sti-logo"></div>
 		
-        <label for="uniForm" id="uniForm">Uniform</label>
-        
-        <br>
-        
+		<label for="uniForm" id="uniForm">Uniform</label>
+		<br>
 		<table>
 			<h2 style="text-align: center;">Select:</h2>
 			<form action="cart.html">
+				<!-- blouse-->
 				<tr>
 					<td>
-						<a href="product_details.html" class="overlay"></a>
-						<a class="zoomTool" href="product_details.html" title="add to cart"></a>
 						<a href="product_details.html"></a>
 						<div class="image-box"><img src="https://i.ibb.co/vDQxSDk/shs-male-top.png" alt="Image 1" title="White polo and vest"></div>
 						<div class="caption cntr">
-							<p> <input type="checkbox" id="shs-m-polo-small" name="shs-m-polo-small" value="SHS Male Polo">White polo and vest (S-XL)</p>
+							<p> <input type="checkbox" id="shs-m-blouse-small" name="shs-m-blouse-small" value="SHS Male Blouse">White polo and vest (S-XL)</p>
 							<p><strong>600.00</strong></p>
 							<h4>
-								<label for="smallPoloQuantity">Quantity:</label>
-								<input type="number" id="smallPoloQuantity" value="0" min="0" oninput="calculateTotal()">
+								<label for="smallBlouseQuantity">Quantity:</label>
+								<input type="number" id="smallBlouseQuantity" value="0" min="0" oninput="calculateTotal()">
 							</h4>
 							<br class="clr">
 						</div>
 					</td>
-					<td>         
-						<a href="product_details.html" class="overlay"></a>
-						<a class="zoomTool" href="product_details.html" title="add to cart"></a>
-						<a href="product_details.html"></a>
+					<!-- slacks-->
+					<td>
 						<div class="image-box"><img src="https://i.ibb.co/n6mp3V1/shs-male-bottom.png" alt="Image 2" title="Dark blue slacks"></div>
 						<div class="caption cntr">
 							<p><input type="checkbox" id="shs-m-slacks-small" name="shs-m-slacks-small" value="SHS Male Pants">Dark blue slacks (S-M)</p>
@@ -201,20 +220,21 @@
 						</div>
 					</td>
 				</tr>
+				<!-- blouse -->
 				<tr>
 					<td>
-						
 						<div class="caption cntr">
-							<p><input type="checkbox" id="shs-m-polo-medium" name="shs-m-polo-medium" value="SHS Male Polo">White polo and vest (2XL-3XL)</p>
+							<p><input type="checkbox" id="shs-m-blouse-medium" name="shs-m-blouse-medium" value="SHS Male Blouse">White polo and vest (2XL-3XL)</p>
 							<p><strong>630.00</strong></p>
 							<h4>
-								<label for="mediumPoloQuantity">Quantity:</label>
-								<input type="number" id="mediumPoloQuantity" value="0" min="0" oninput="calculateTotal()">
+								<label for="mediumBlouseQuantity">Quantity:</label>
+								<input type="number" id="mediumBlouseQuantity" value="0" min="0" oninput="calculateTotal()">
 							</h4>
 							<br class="clr">
 						</div>
 					</td>
-					<td>         
+					<td>
+						<!-- slacks-->
 						<p><input type="checkbox" id="shs-m-slacks-medium" name="shs-m-slacks-medium" value="SHS Male Pants">Dark blue slacks (L-2XL)</p>
 						<p><strong>430.00</strong></p>
 						<h4>
@@ -226,15 +246,17 @@
 				</tr>
 				<tr>
 					<td>
-						<p><input type="checkbox" id="shs-m-polo-large" name="shs-m-polo-large" value="SHS Male Polo">White polo and vest (4XL-7XL)</p>
+						<!--blouse-->
+						<p><input type="checkbox" id="shs-m-blouse-large" name="shs-m-blouse-large" value="SHS Male Blouse">White polo and vest (4XL-7XL)</p>
 						<p><strong>950.00</strong></p>
 						<h4>
-							<label for="largePoloQuantity">Quantity:</label>
-							<input type="number" id="largePoloQuantity" value="0" min="0" oninput="calculateTotal()">
+							<label for="largeBlouseQuantity">Quantity:</label>
+							<input type="number" id="largeBlouseQuantity" value="0" min="0" oninput="calculateTotal()">
 						</h4>
 						<br class="clr">
 					</td>
-					<td>         
+					<td>
+						<!-- slack-->
 						<p><input type="checkbox" id="shs-m-slacks-large" name="shs-m-slacks-large" value="SHS Male Pants">Dark blue slacks (3XL)</p>
 						<p><strong>470.00</strong></p>
 						<h4>
@@ -244,10 +266,11 @@
 						<br class="clr">
 					</td>
 				</tr>
+				<!-- necktie-->
 				<tr>
 					<td colspan="2">
 						<div class="image-box" style="margin: 0 auto; text-align: center;">
-							<img src="https://cdn.discordapp.com/attachments/1155143207181619262/1194682482700865718/image.png" alt="Image 2" title="Necktie">
+							<img src="https://cdn.discordapp.com/attachments/1155143207181619262/1195040810417279016/image.png" alt="Image 2" title="Necktie">
 						</div>
 						<div class="caption cntr">
 							<p><input type="checkbox" id="shs-m-necktie" name="shs-m-necktie" value="SHS Male Pants">Necktie</p>
@@ -260,19 +283,96 @@
 						</div>
 					</td>
 				</tr>
+				<!--- __________________-->
+				<tr>
+					<td colspan="2">
+						<div class="image-box" style="margin: 0 auto; text-align: center;">
+							
+						</div>
+						<div class="caption cntr">
+							<label for="peuniForm" id="peuniForm">PE Uniform</label>
+							<h2 style="text-align: center;">Select:</h2>
+							
+							<br class="clr">
+						</div>
+					</td>
+				</tr>
+				
+				<!--pe shirt-->
+				<tr>
+					<td>
+						<a href="product_details.html"></a>
+						<div class="image-box"><img src="https://i.ibb.co/vDQxSDk/shs-male-top.png" alt="Image 1" title="White polo and vest"></div>
+						<div class="caption cntr">
+							<p> <input type="checkbox" id="shs-m-peshirt-small" name="shs-m-peshirt-small" value="SHS Male PeShirt">PE Shirt (XS-2XL)</p>
+							<p><strong>175.00</strong></p>
+							<h4>
+								<label for="smallPEshirtQuantity">Quantity:</label>
+								<input type="number" id="smallPEshirtQuantity" value="0" min="0" oninput="calculateTotal()">
+							</h4>
+							<br class="clr">
+						</div>
+					</td>
+					
+					<!-- pe pants-->
+					<td>
+						<div class="image-box"><img src="https://i.ibb.co/n6mp3V1/shs-male-bottom.png" alt="Image 2" title="Dark blue slacks"></div>
+						<div class="caption cntr">
+							<p><input type="checkbox" id="shs-m-pepants-small" name="shs-m-pepanta-small" value="SHS Male PE Pants">PE Pants (S-M)</p>
+							<p><strong>405.00</strong></p>
+							<h4>
+								<label for="smallPEPantsQuantity">Quantity:</label>
+								<input type="number" id="smallPEPantsQuantity" value="0" min="0" oninput="calculateTotal()">
+							</h4>
+							<br class="clr">
+						</div>
+					</td>
+				</tr>
+				
+				<!--pe shirt-->
+				<tr>
+					<td>
+						<div class="caption cntr">
+							<p> <input type="checkbox" id="shs-m-medpeshirt-small" name="shs-m-medpeshirt-small" value="SHS Male medPeShirt">PE Shirt (3XL-5XL)</p>
+							<p><strong>200.00</strong></p>
+							<h4>
+								<label for="medPEshirtQuantity">Quantity:</label>
+								<input type="number" id="medPEshirtQuantity" value="0" min="0" oninput="calculateTotal()">
+							</h4>
+							<br class="clr">
+						</div>
+					</td>
+					<!-- pe pants-->
+					<td>
+						<div class="caption cntr">
+							<p><input type="checkbox" id="shs-m-medpepants-small" name="shs-m-medpepanta-small" value="SHS Male med PE Pants">PE Pants (5XL)</p>
+							<p><strong>415.00</strong></p>
+							<h4>
+								<label for="medPEPantsQuantity">Quantity:</label>
+								<input type="number" id="medPEPantsQuantity" value="0" min="0" oninput="calculateTotal()">
+							</h4>
+							<br class="clr">
+						</div>
+					</td>
+				</tr>
+				
+				
 				
 				<tr>
 					<td colspan="2">
 						Total Cost: <span id="totalCost">0.00</span>
 					</td>
 				</tr>
-				
+				<tr>
+					<td colspan="2" style="text-align: center;">
+						<input type="submit" value="Submit">
+					</td>
+				</tr>
 			</table>
-			<p><input type="submit" value="Submit" style="position: relative; right: -700px;"></p>
 			
 		</form>
 		
 	</body>
 	
 	
-</html>		
+</html>
