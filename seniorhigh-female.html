@@ -138,7 +138,6 @@
             background-color: #3498db;
             color: #000;
 			}
-			
 		</style>
 		
 		<!-- <script src="costing.js"></script> -->
@@ -148,24 +147,34 @@
 			var smallBlouseQuantity = parseInt(document.getElementById("smallBlouseQuantity").value) || 0;
 			var smallPantsQuantity = parseInt(document.getElementById("smallPantsQuantity").value) || 0;
 			var mediumBlouseQuantity = parseInt(document.getElementById("mediumBlouseQuantity").value) || 0;
+			var smallPEshirtQuantity = parseInt(document.getElementById("smallPEshirtQuantity").value) || 0;
+			var smallPEPantsQuantity = parseInt(document.getElementById("smallPEPantsQuantity").value) || 0;
+			var medPEshirtQuantity = parseInt(document.getElementById("medPEshirtQuantity").value) || 0;
+			var medPEPantsQuantity = parseInt(document.getElementById("medPEPantsQuantity").value) || 0;
 			var necktieQuantity = parseInt(document.getElementById("necktieQuantity").value) || 0;
 			
 			var smallBlouseCost = 600.00;
 			var smallPantsCost = 235.00;
 			var mediumBlouseCost = 910.00;
+			var smallPEshirtCost = 175.00;
+			var smallPEPantsCost = 300.00;
+			var medPEshirtCost = 200.00;
+			var medPEPantsCost = 415.00;
 			var necktieCost = 85.00;
 			
 			var totalCost = (
             smallBlouseQuantity * smallBlouseCost +
             smallPantsQuantity * smallPantsCost +
             mediumBlouseQuantity * mediumBlouseCost +
+            smallPEshirtQuantity * smallPEshirtCost + smallPEPantsQuantity * smallPEPantsCost +
+            medPEshirtQuantity * medPEshirtCost + medPEPantsQuantity * medPEPantsCost +
             necktieQuantity * necktieCost
 			);
 			
 			document.getElementById("totalCost").innerHTML = totalCost.toFixed(2);
 		}
-		
 	</script>
+	
 	<body>
 		<div id="sti-logo"></div>
 		
@@ -198,7 +207,7 @@
 						<a href="product_details.html"></a>
 						<div class="image-box"><img src="https://i.ibb.co/Tw3f1fF/shs-female-bottom.png" alt="Image 2" title="Dark blue slacks"></div>
 						<div class="caption cntr">
-							<p><input type="checkbox" id="shs-f-skirt-small" name="shs-f-skirt-small" value="SHS Female Skirt">Dark blue pencil-cut skirt (S-3XL)</p>
+							<p><input type="checkbox" id="shs-f-skirt-small" name="shs-f-skirt-small" value="SHS Female Pants">Dark blue pencil-cut skirt (S-3XL)</p>
 							<p><strong>235.00</strong></p>
 							<h4>
 								<label for="smallPantsQuantity">Quantity:</label>
@@ -227,7 +236,7 @@
 							<img src="https://cdn.discordapp.com/attachments/1155143207181619262/1194699019499348158/image.png" alt="Image 2" title="Necktie">
 						</div>
 						<div class="caption cntr">
-							<p><input type="checkbox" id="shs-f-necktie" name="shs-f-necktie" value="SHS Male Pants">Necktie</p>
+							<p><input type="checkbox" id="shs-m-necktie" name="shs-m-necktie" value="SHS Male Pants">Necktie</p>
 							<p><strong>85.00</strong></p>
 							<h4>
 								<label for="necktieQuantity">Quantity:</label>
@@ -238,22 +247,100 @@
 					</td>
 				</tr>
 				
-				<tr>
-					<td colspan="2">
-						Total Cost: <span id="totalCost">0.00</span>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2" style="text-align: center;">
-						<input type="submit" value="Submit">
-					</td>
-				</tr>
-			</table>
+			</tr>
+            <!--- __________________-->
+            <tr>
+                <td colspan="2">
+                    <div class="image-box" style="margin: 0 auto; text-align: center;">
+						
+					</div>
+                    <div class="caption cntr">
+                        <label for="peuniForm" id="peuniForm">PE Uniform</label>
+                        <h2 style="text-align: center;">Select:</h2>
+						
+                        <br class="clr">
+					</div>
+				</td>
+			</tr>
 			
-		</form>
+			
+			
+            <!--pe shirt-->
+            <tr>
+                <td>
+                    <a href="product_details.html"></a>
+                    <div class="image-box"><img src="https://i.ibb.co/vDQxSDk/shs-male-top.png" alt="Image 1" title="White polo and vest"></div>
+                    <div class="caption cntr">
+                        <p> <input type="checkbox" id="shs-m-peshirt-small" name="shs-m-peshirt-small" value="SHS Male PeShirt">PE Shirt (XS-2XL)</p>
+                        <p><strong>175.00</strong></p>
+                        <h4>
+                            <label for="smallPEshirtQuantity">Quantity:</label>
+                            <input type="number" id="smallPEshirtQuantity" value="0" min="0" oninput="calculateTotal()">
+						</h4>
+                        <br class="clr">
+					</div>
+				</td>
+				
+                <!-- pe pants-->
+                <td>
+                    <div class="image-box"><img src="https://i.ibb.co/n6mp3V1/shs-male-bottom.png" alt="Image 2" title="Dark blue slacks"></div>
+                    <div class="caption cntr">
+                        <p><input type="checkbox" id="shs-m-pepants-small" name="shs-m-pepanta-small" value="SHS Male PE Pants">PE Pants (S-M)</p>
+                        <p><strong>405.00</strong></p>
+                        <h4>
+                            <label for="smallPEPantsQuantity">Quantity:</label>
+                            <input type="number" id="smallPEPantsQuantity" value="0" min="0" oninput="calculateTotal()">
+						</h4>
+                        <br class="clr">
+					</div>
+				</td>
+			</tr>
+			
+            <!--pe shirt-->
+            <tr>
+                <td>
+                    <div class="caption cntr">
+                        <p> <input type="checkbox" id="shs-m-medpeshirt-small" name="shs-m-medpeshirt-small" value="SHS Male medPeShirt">PE Shirt (3XL-5XL)</p>
+                        <p><strong>200.00</strong></p>
+                        <h4>
+                            <label for="medPEshirtQuantity">Quantity:</label>
+                            <input type="number" id="medPEshirtQuantity" value="0" min="0" oninput="calculateTotal()">
+						</h4>
+                        <br class="clr">
+					</div>
+				</td>
+                <!-- pe pants-->
+                <td>
+                    <div class="caption cntr">
+                        <p><input type="checkbox" id="shs-m-medpepants-small" name="shs-m-medpepanta-small" value="SHS Male med PE Pants">PE Pants (5XL)</p>
+                        <p><strong>415.00</strong></p>
+                        <h4>
+                            <label for="medPEPantsQuantity">Quantity:</label>
+                            <input type="number" id="medPEPantsQuantity" value="0" min="0" oninput="calculateTotal()">
+						</h4>
+                        <br class="clr">
+					</div>
+				</td>
+			</tr>
+			
+			
+			
+            <tr>
+                <td colspan="2">
+                    Total Cost: <span id="totalCost">0.00</span>
+				</td>
+			</tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit">
+				</td>
+			</tr>
+		</table>
 		
-		
-	</body>
+	</form>
 	
 	
+</body>
+
+
 </html>
