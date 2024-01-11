@@ -1,0 +1,143 @@
+<html>
+	<head>
+		<script>
+			function BSCSMale() {
+				window.location.href = "bscsmale.html";
+			}
+			
+			function BSCSFemale() {
+				window.location.href = "bscsfemale.html"
+			}
+		</script>
+		<style>
+			body {
+			background: url(https://cdn.discordapp.com/attachments/1150585030830203023/1184139858206277712/bck2.jpg?ex=658ae32e&is=65786e2e&hm=de36c594c246fc4ff6b35365ef756c75e748855ded92a1112f6e3e6ad87fdd43&);
+			background-repeat: no-repeat;
+			background-size: cover;
+			min-height: 100vh;
+			font-family: sans-serif;
+			}
+			
+			#navbar {
+			width: 100%;
+			background-color: #FFFFFF;
+			padding: 2px;
+			}
+			
+			#navbar ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			}
+			
+			#navbar li {
+			float: left;
+			margin-right: 20px;
+			}
+			
+			#navbar li a {
+			color: #202020;
+			display: block;
+			padding: 8px;
+			text-decoration: none;
+			}
+			
+			#navbar li a:hover {
+			background-color: #202020;
+			color: #FFFFFF;
+			}
+			
+			#sti-logo {
+			margin-top: 10pt;
+			margin-left: 1200px;
+			background-image: url(https://upload.wikimedia.org/wikipedia/en/1/1f/Systems_Technology_Institute.png);
+			background-repeat: no-repeat;
+			background-size: contain; 
+			height: 161px;
+			width: 200px; 
+			}
+			
+			form {
+			float: right;
+			}
+			
+			label {
+			background-color: rgba(255, 255, 255, 0);
+			}
+			
+			input[type="text"],
+			select {
+			width: 500px;
+			padding: 10px;
+			margin-bottom: 15px;
+			display: block;
+			}
+			
+			select {
+			width: 500px;
+			cursor: pointer;
+			}
+			
+			button {
+			font-size: 16px;
+			padding: 10px 20px;
+			width: 249px;
+			height: 40px;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+			margin-top: 10px;
+			background-color: #3498db;
+			color: #000;
+			transition: background-color 0.3s, color 0.3s;
+			}
+			
+			button:hover {
+			background-color: #ffff00;
+			color: #000;
+			}
+			
+			button:active {
+			background-color: #21618c;
+			color: #000;
+			}
+			
+			input[type=submit] {
+  			font-size: 16px;
+			width: 249px;
+  			background-color: #3498db;
+  			color: #000;
+  			padding: 10px 20px;
+		 	height: 40px;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+			}
+			input[type=submit]:hover {
+			background-color: #ffff00;
+			color: #000; 
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="navbar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="sizeguide.html">Size Guide</a></li>
+			</ul>
+		</div>
+		
+		<div id="sti-logo"></div>
+		<p></p>
+		<p></p>
+		
+		<p style="position: relative; top: 135px; right: -1050px;">Select your gender.</p>
+		
+		<button onclick="BSCSMale()" style="position: relative; top: 135px; right: -1050px;">Male</button>
+		<button onclick="BSCSFemale()" style="position: relative; top: 135px; right: -1050px;">Female</button>
+		
+	</body>
+</html>
