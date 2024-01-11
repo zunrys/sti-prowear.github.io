@@ -8,8 +8,42 @@
 			font-family: sans-serif;
 			}
 			
-			p {
+			p, h1, details {
 			color: #FFF;
+			}
+			
+			summary {
+			font-size: 14pt;
+			}
+			
+			#navbar {
+			width: 100%;
+			background-color: #FFFFFF;
+			padding: 2px;
+			}
+			
+			#navbar ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			}
+			
+			#navbar li {
+			float: left;
+			margin-right: 20px;
+			}
+			
+			#navbar li a {
+			color: #202020;
+			display: block;
+			padding: 8px;
+			text-decoration: none;
+			}
+			
+			#navbar li a:hover {
+			background-color: #202020;
+			color: #FFFFFF;
 			}
 			
 			button {
@@ -36,15 +70,44 @@
 			color: #000;
 			}
 		</style>
-		</script>
-	</head>
+	</script>
+</head>
+
+<body>
+	<div id="navbar">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="sizeguide.html">Size Guide</a></li>
+		</ul>
+	</div>
 	
-	<body>
-		
-		<p style="text-align: center; position: relative; top: 205px;">Page under construction, please come back later!</p>
-		<center style="position: relative; top: 205px;">
-			<button onclick="history.back()">Back</button>
-		</center>
-		
-	</body>
+	<details style="text-align: center; position: relative; top: 105px;"><summary><b>What is the STI-Prowear?</b></summary>
+		<p>STI-Prowear is a simple, easy-to-use tool for uniform reservation.</p>
+		<p>It is a website conceptualized by STI-lish as a way to address the problem of going to school in person and waiting in line to check the availability of uniforms.</p>
+	</details>
+	
+	<br><br>
+	
+	<details style="text-align: center; position: relative; top: 105px;"><summary><b>How do you reserve uniforms?</b></summary>
+		<p>In the home page, log in with your name and student number. Select your grade level, course (if College), and gender.</p>
+		<p>When you arrive at the uniform selection page, check the boxes that correspond to the piece of clothing you want reserved.</p>
+	</details>
+	
+	<br><br>
+	
+	<details style="text-align: center; position: relative; top: 105px;"><summary><b>Can reserved uniforms be refunded?</b></summary>
+		<p><i>No, they cannot be refunded.</i></p>
+		<p>After selecting items, there will be a confirmation page that will ask if the user is sure to reserve those. An alert box will follow that will remind that once "OK" is clicked the items cannot be refunded anymore.</p>
+	</details>
+	
+	<br><br>
+	
+	<details style="text-align: center; position: relative; top: 105px;"><summary><b>How do we claim our uniforms?</b></summary>
+		<p>As STI Pro-Wear only focuses on reservations, it does not send the uniforms to the user.</p>
+		<p>The user would still have to go to the PAMO (Purchasing and Asset Management Office) and claim the uniform pieces they reserved.</p>
+	</details>
+</center>
+
+</body>
 </html>
