@@ -1,35 +1,35 @@
 <html>
 	
-    <head>
+	<head>
 		<style>
-			
 			form {
-			margin: auto;
-			text-align: center;
+            margin: auto;
+            text-align: center;
 			}
 			
 			table {
-			margin: auto;
+            margin: auto;
 			}
 			
 			td {
-			text-align: center;
-			width: 200px;
-			padding: 10pt;
+            text-align: center;
+            width: 200px;
+            padding: 10pt;
 			}
 			
 			body {
-			background: url(https://cdn.discordapp.com/attachments/1155143207181619262/1184163005462753290/Untitled18_20231213000046.png?ex=658af8bd&is=657883bd&hm=e6a86eb41a5ff89e9e1915bcc4bec5d57b84aff473a3806a5ee279b15a0aeef3&);
-			background-repeat: no-repeat;
-			background-size: cover;
-			font-family: sans-serif;
-			color: #FFF;
+            background: url(https://cdn.discordapp.com/attachments/1155143207181619262/1184163005462753290/Untitled18_20231213000046.png?ex=658af8bd&is=657883bd&hm=e6a86eb41a5ff89e9e1915bcc4bec5d57b84aff473a3806a5ee279b15a0aeef3&);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: sans-serif;
+            color: #FFF;
 			}
 			
 			.container {
-			display: flex;
-			align-items: center;
+            display: flex;
+            align-items: center;
 			}
+			
 			/* label {
 			background-color: rgba(255, 255, 255, 0);
 			display: inline-block;
@@ -40,141 +40,220 @@
 			}
 			*/
 			#male {
-			/* display: inline-block; */
-			text-align: center;
-			margin-right: 90px;
-			font-size: 15px
+            /* display: inline-block; */
+            text-align: center;
+            margin-right: 90px;
+            font-size: 15px
 			}
+			
 			#Fmale {
-			/* display: inline-block; */
-			text-align: center;
-			margin-left: 1px;
-			font-size: 15px
+            /* display: inline-block; */
+            text-align: center;
+            margin-left: 1px;
+            font-size: 15px
 			}
+			
 			#uniForm {
-			font-size: 30px; /* Set a different font size for this label */
-			color: #0; /* Set a specific color if needed */
-			/* Add any other styles as needed */
+            font-size: 30px;
+            /* Set a different font size for this label */
+            color: #0;
+            /* Set a specific color if needed */
+            /* Add any other styles as needed */
 			}
 			
 			#sti-logo {
-			margin-top: 0;
-			background-image: url(https://upload.wikimedia.org/wikipedia/en/1/1f/Systems_Technology_Institute.png);
-			background-repeat: no-repeat;
-			background-size: contain;
-			height: 161px;
-			width: 200px;
+            margin-top: 0;
+            background-image: url(https://upload.wikimedia.org/wikipedia/en/1/1f/Systems_Technology_Institute.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 161px;
+            width: 200px;
 			}
 			
 			.image-container {
-			display: flex;
+            display: flex;
 			}
 			
 			.image-box {
-			margin-right: 9px;
-			margin-left: 5.9px; 
+            margin-right: 9px;
+            margin-left: 5.9px;
 			}
 			
 			.image-box img {
-			width: 200px; /* Adjust the width as needed */
-			height: 200px; /* Adjust the height as needed */
-			border: 1px solid #ccc;
-			border-radius: 4px;
+            width: 200px;
+            /* Adjust the width as needed */
+            height: 200px;
+            /* Adjust the height as needed */
+            border: 1px solid #ccc;
+            border-radius: 4px;
 			}
 			
 			#uniForm {
-			text-align: center; /* Center the text within the label */
-			display: block; /* Make the label a block element */
-			margin: 0 auto; /* Center the block element */
+            text-align: center;
+            /* Center the text within the label */
+            display: block;
+            /* Make the label a block element */
+            margin: 0 auto;
+            /* Center the block element */
 			}
 			
 			button {
-			font-size: 16px;
-			padding: 10px 20px;
-			width: 249px;
-			height: 40px;
-			border: none;
-			border-radius: 10px;
-			cursor: pointer;
-			margin-top: 10px;
-			margin: auto;
-			background-color: #3498db;
-			color: #000;
-			transition: background-color 0.3s, color 0.3s;
+            font-size: 16px;
+            padding: 10px 20px;
+            width: 249px;
+            height: 40px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin: auto;
+            background-color: #3498db;
+            color: #000;
+            transition: background-color 0.3s, color 0.3s;
 			}
 			
 			button:hover {
-			background-color: #ffff00;
-			color: #000;
+            background-color: #ffff00;
+            color: #000;
 			}
 			
 			button:active {
-			background-color: #21618c;
-			color: #000;
+            background-color: #21618c;
+            color: #000;
 			}
 			
 			input[type=submit] {
-			font-size: 16px;
-			width: 181px;
-			background-color: #ffff00;
-			color: #000;
-			padding: 10px 20px;
-			height: 40px;
-			border: none;
-			border-radius: 10px;
-			cursor: pointer;
+            font-size: 16px;
+            width: 181px;
+            background-color: #ffff00;
+            color: #000;
+            padding: 10px 20px;
+            height: 40px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
 			}
+			
 			input[type=submit]:hover {
-			background-color: #3498db;
-			color: #000; 
+            background-color: #3498db;
+            color: #000;
 			}
+			
 		</style>
 		
 		<!-- <script src="costing.js"></script> -->
 	</head>
-	
-    <body>
+	<script>
+		function calculateTotal() {
+			var smallBlouseQuantity = parseInt(document.getElementById("smallBlouseQuantity").value) || 0;
+			var smallPantsQuantity = parseInt(document.getElementById("smallPantsQuantity").value) || 0;
+			var mediumBlouseQuantity = parseInt(document.getElementById("mediumBlouseQuantity").value) || 0;
+			var necktieQuantity = parseInt(document.getElementById("necktieQuantity").value) || 0;
+			
+			var smallBlouseCost = 600.00;
+			var smallPantsCost = 235.00;
+			var mediumBlouseCost = 910.00;
+			var necktieCost = 85.00;
+			
+			var totalCost = (
+            smallBlouseQuantity * smallBlouseCost +
+            smallPantsQuantity * smallPantsCost +
+            mediumBlouseQuantity * mediumBlouseCost +
+            necktieQuantity * necktieCost
+			);
+			
+			document.getElementById("totalCost").innerHTML = totalCost.toFixed(2);
+		}
+		
+	</script>
+	<body>
 		<div id="sti-logo"></div>
 		
-        <label for="uniForm" id="uniForm">Uniform</label>
-        
-        <br>
-        
-		<table>
-            <tr>
-                <td><div class="image-box"><img src="https://i.ibb.co/4R5dQ0S/shs-female-top.png" alt="Image 1" title="White blouse and vest"></div></td>
-                <td><div class="image-box"><img src="https://i.ibb.co/Tw3f1fF/shs-female-bottom.png" alt="Image 2" title="Dark blue skirt"></div></td>
-			</tr>
-			<!-- <tr>
-				<td><script type="text/javascript">document.write(Mcost)</script></td>
-				<td><script type="text/javascript">document.write(FMcost)</script></td>
-			</tr> -->
-		</table>
+		<label for="uniForm" id="uniForm">Uniform</label>
 		
-		<h2 style="text-align: center;">Select:</h2>
-		<form action="cart.html">
-			<input type="checkbox" id="shs-f-blouse-small" name="shs-f-blouse-small" value="SHS Female Blouse">
-			<label for="vehicle1">White blouse and vest <b>(S)</b></label><p></p>
+		<br>
+		
+		<table>
+			<h2 style="text-align: center;">Select:</h2>
+			<form action="cart.html">
+				<tr>
+					<td>
+						<a href="product_details.html" class="overlay"></a>
+						<a class="zoomTool" href="product_details.html" title="add to cart"></a>
+						<a href="product_details.html"></a>
+						<div class="image-box"><img src="https://i.ibb.co/4R5dQ0S/shs-female-top.png" alt="Image 1" title="White blouse and vest"></div>
+						<div class="caption cntr">
+							<p><input type="checkbox" id="shs-f-blouse-small" name="shs-f-blouse-small" value="SHS Female Blouse">White blouse and vest (S-3XL)</p>
+							<p><strong>600.00</strong></p>
+							<h4>
+								<label for="smallBlouseQuantity">Quantity:</label>
+								<input type="number" id="smallBlouseQuantity" value="0" min="0" oninput="calculateTotal()">
+							</h4>
+							<br class="clr">
+						</div>
+					</td>
+					<td>
+						<a href="product_details.html" class="overlay"></a>
+						<a class="zoomTool" href="product_details.html" title="add to cart"></a>
+						<a href="product_details.html"></a>
+						<div class="image-box"><img src="https://i.ibb.co/Tw3f1fF/shs-female-bottom.png" alt="Image 2" title="Dark blue slacks"></div>
+						<div class="caption cntr">
+							<p><input type="checkbox" id="shs-f-skirt-small" name="shs-f-skirt-small" value="SHS Female Skirt">Dark blue pencil-cut skirt (S-3XL)</p>
+							<p><strong>235.00</strong></p>
+							<h4>
+								<label for="smallPantsQuantity">Quantity:</label>
+								<input type="number" id="smallPantsQuantity" value="0" min="0" oninput="calculateTotal()">
+							</h4>
+							<br class="clr">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="caption cntr">
+							<p><input type="checkbox" id="shs-f-blouse-medium" name="shs-f-blouse-medium" value="SHS Female Blouse">White blouse and vest (4XL-7XL)</p>
+							<p><strong>910.00</strong></p>
+							<h4>
+								<label for="mediumBlouseQuantity">Quantity:</label>
+								<input type="number" id="mediumBlouseQuantity" value="0" min="0" oninput="calculateTotal()">
+							</h4>
+							<br class="clr">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<div class="image-box" style="margin: 0 auto; text-align: center;">
+							<img src="https://cdn.discordapp.com/attachments/1155143207181619262/1194699019499348158/image.png" alt="Image 2" title="Necktie">
+						</div>
+						<div class="caption cntr">
+							<p><input type="checkbox" id="shs-f-necktie" name="shs-f-necktie" value="SHS Male Pants">Necktie</p>
+							<p><strong>85.00</strong></p>
+							<h4>
+								<label for="necktieQuantity">Quantity:</label>
+								<input type="number" id="necktieQuantity" value="0" min="0" oninput="calculateTotal()" style="margin: 0 auto;">
+							</h4>
+							<br class="clr">
+						</div>
+					</td>
+				</tr>
+				
+				<tr>
+					<td colspan="2">
+						Total Cost: <span id="totalCost">0.00</span>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align: center;">
+						<input type="submit" value="Submit">
+					</td>
+				</tr>
+			</table>
 			
-			<input type="checkbox" id="shs-f-skirt-small" name="shs-f-skirt-small" value="SHS Female Pants">
-			<label for="vehicle1">Dark blue pencil-cut skirt <b>(S)</b></label><p></p>
-			
-			<input type="checkbox" id="shs-f-blouse-medium" name="shs-f-blouse-medium" value="SHS Female Blouse">
-			<label for="vehicle1">White blouse and vest <b>(M)</b></label><p></p>
-			
-			<input type="checkbox" id="shs-f-skirt-medium" name="shs-f-skirt-medium" value="SHS Female Pants">
-			<label for="vehicle1">Dark blue pencil-cut skirt <b>(M)</b></label><p></p>
-			
-			<input type="checkbox" id="shs-f-blouse-large" name="shs-f-blouse-large" value="SHS Female Blouse">
-			<label for="vehicle1">White blouse and vest <b>(L)</b></label><p></p>
-			
-			<input type="checkbox" id="shs-f-skirt-large" name="shs-f-skirt-large" value="SHS Female Pants">
-			<label for="vehicle1">Dark blue pencil-cut skirt <b>(L)</b></label><p></p>
-			
-			<input type="submit" value="Submit">
 		</form>
+		
 		
 	</body>
 	
 	
-</html>				
+</html>
