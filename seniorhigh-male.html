@@ -130,7 +130,33 @@
 			}
 		</style>
 		
-		<!-- <script src="costing.js"></script> -->
+		<script src="costing.js"> </script>
+		<script>function calculateTotal() {
+			var smallPoloQuantity = parseInt(document.getElementById("smallPoloQuantity").value) || 0;
+			var smallPantsQuantity = parseInt(document.getElementById("smallPantsQuantity").value) || 0;
+			var mediumPoloQuantity = parseInt(document.getElementById("mediumPoloQuantity").value) || 0;
+			var mediumPantsQuantity = parseInt(document.getElementById("mediumPantsQuantity").value) || 0;
+			var largePoloQuantity = parseInt(document.getElementById("largePoloQuantity").value) || 0;
+			var largePantsQuantity = parseInt(document.getElementById("largePantsQuantity").value) || 0;
+			var necktieQuantity = parseInt(document.getElementById("necktieQuantity").value) || 0;
+			
+			var smallPoloCost = 600.00;
+			var smallPantsCost = 405.00;
+			var mediumPoloCost = 630.00;
+			var mediumPantsCost = 430.00;
+			var largePoloCost = 950.00;
+			var largePantsCost = 470.00;
+			var necktieCost = 85.00;
+			
+			var totalCost = (
+            smallPoloQuantity * smallPoloCost + smallPantsQuantity * smallPantsCost +
+            mediumPoloQuantity * mediumPoloCost + mediumPantsQuantity * mediumPantsCost +
+            largePoloQuantity * largePoloCost + largePantsQuantity * largePantsCost +
+            necktieQuantity * necktieCost
+			);
+			
+			document.getElementById("totalCost").innerHTML = totalCost.toFixed(2);
+		} </script>
 	</head>
 	
     <body>
@@ -141,40 +167,112 @@
         <br>
         
 		<table>
-            <tr>
-                <td><div class="image-box"><img src="https://i.ibb.co/vDQxSDk/shs-male-top.png" alt="Image 1" title="White polo and vest"></div></td>
-                <td><div class="image-box"><img src="https://i.ibb.co/n6mp3V1/shs-male-bottom.png" alt="Image 2" title="Dark blue slacks"></div></td>
-			</tr>
-			<!-- <tr>
-				<td><script type="text/javascript">document.write(Mcost)</script></td>
-				<td><script type="text/javascript">document.write(FMcost)</script></td>
-			</tr> -->
-		</table>
-		
-		<h2 style="text-align: center;">Select:</h2>
-		<form action="cart.html">
-			<input type="checkbox" id="shs-m-blouse-small" name="shs-m-blouse-small" value="SHS Male Blouse">
-			<label for="vehicle1">White polo and vest <b>(S)</b></label><p></p>
+			<h2 style="text-align: center;">Select:</h2>
+			<form action="cart.html">
+				<tr>
+					<td>
+						<a href="product_details.html" class="overlay"></a>
+						<a class="zoomTool" href="product_details.html" title="add to cart"></a>
+						<a href="product_details.html"></a>
+						<div class="image-box"><img src="https://i.ibb.co/vDQxSDk/shs-male-top.png" alt="Image 1" title="White polo and vest"></div>
+						<div class="caption cntr">
+							<p> <input type="checkbox" id="shs-m-polo-small" name="shs-m-polo-small" value="SHS Male Polo">White polo and vest (S-XL)</p>
+							<p><strong>600.00</strong></p>
+							<h4>
+								<label for="smallPoloQuantity">Quantity:</label>
+								<input type="number" id="smallPoloQuantity" value="0" min="0" oninput="calculateTotal()">
+							</h4>
+							<br class="clr">
+						</div>
+					</td>
+					<td>         
+						<a href="product_details.html" class="overlay"></a>
+						<a class="zoomTool" href="product_details.html" title="add to cart"></a>
+						<a href="product_details.html"></a>
+						<div class="image-box"><img src="https://i.ibb.co/n6mp3V1/shs-male-bottom.png" alt="Image 2" title="Dark blue slacks"></div>
+						<div class="caption cntr">
+							<p><input type="checkbox" id="shs-m-slacks-small" name="shs-m-slacks-small" value="SHS Male Pants">Dark blue slacks (S-M)</p>
+							<p><strong>405.00</strong></p>
+							<h4>
+								<label for="smallPantsQuantity">Quantity:</label>
+								<input type="number" id="smallPantsQuantity" value="0" min="0" oninput="calculateTotal()">
+							</h4>
+							<br class="clr">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						
+						<div class="caption cntr">
+							<p><input type="checkbox" id="shs-m-polo-medium" name="shs-m-polo-medium" value="SHS Male Polo">White polo and vest (2XL-3XL)</p>
+							<p><strong>630.00</strong></p>
+							<h4>
+								<label for="mediumPoloQuantity">Quantity:</label>
+								<input type="number" id="mediumPoloQuantity" value="0" min="0" oninput="calculateTotal()">
+							</h4>
+							<br class="clr">
+						</div>
+					</td>
+					<td>         
+						<p><input type="checkbox" id="shs-m-slacks-medium" name="shs-m-slacks-medium" value="SHS Male Pants">Dark blue slacks (L-2XL)</p>
+						<p><strong>430.00</strong></p>
+						<h4>
+							<label for="mediumPantsQuantity">Quantity:</label>
+							<input type="number" id="mediumPantsQuantity" value="0" min="0" oninput="calculateTotal()">
+						</h4>
+						<br class="clr">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p><input type="checkbox" id="shs-m-polo-large" name="shs-m-polo-large" value="SHS Male Polo">White polo and vest (4XL-7XL)</p>
+						<p><strong>950.00</strong></p>
+						<h4>
+							<label for="largePoloQuantity">Quantity:</label>
+							<input type="number" id="largePoloQuantity" value="0" min="0" oninput="calculateTotal()">
+						</h4>
+						<br class="clr">
+					</td>
+					<td>         
+						<p><input type="checkbox" id="shs-m-slacks-large" name="shs-m-slacks-large" value="SHS Male Pants">Dark blue slacks (3XL)</p>
+						<p><strong>470.00</strong></p>
+						<h4>
+							<label for="largePantsQuantity">Quantity:</label>
+							<input type="number" id="largePantsQuantity" value="0" min="0" oninput="calculateTotal()">
+						</h4>
+						<br class="clr">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<div class="image-box" style="margin: 0 auto; text-align: center;">
+							<img src="https://cdn.discordapp.com/attachments/1155143207181619262/1194682482700865718/image.png" alt="Image 2" title="Necktie">
+						</div>
+						<div class="caption cntr">
+							<p><input type="checkbox" id="shs-m-necktie" name="shs-m-necktie" value="SHS Male Pants">Necktie</p>
+							<p><strong>85.00</strong></p>
+							<h4>
+								<label for="necktieQuantity">Quantity:</label>
+								<input type="number" id="necktieQuantity" value="0" min="0" oninput="calculateTotal()" style="margin: 0 auto;">
+							</h4>
+							<br class="clr">
+						</div>
+					</td>
+				</tr>
+				
+				<tr>
+					<td colspan="2">
+						Total Cost: <span id="totalCost">0.00</span>
+					</td>
+				</tr>
+				
+			</table>
+			<p><input type="submit" value="Submit" style="position: relative; right: -700px;"></p>
 			
-			<input type="checkbox" id="shs-m-slacks-small" name="shs-m-slacks-small" value="SHS Male Pants">
-			<label for="vehicle1">Dark blue slacks <b>(S)</b></label><p></p>
-			
-			<input type="checkbox" id="shs-m-blouse-medium" name="shs-m-blouse-medium" value="SHS Male Blouse">
-			<label for="vehicle1">White polo and vest <b>(M)</b></label><p></p>
-			
-			<input type="checkbox" id="shs-m-slacks-medium" name="shs-m-slacks-medium" value="SHS Male Pants">
-			<label for="vehicle1">Dark blue slacks <b>(M)</b></label><p></p>
-			
-			<input type="checkbox" id="shs-m-blouse-large" name="shs-m-blouse-large" value="SHS Male Blouse">
-			<label for="vehicle1">White polo and vest <b>(L)</b></label><p></p>
-			
-			<input type="checkbox" id="shs-m-slacks-large" name="shs-m-slacks-large" value="SHS Male Pants">
-			<label for="vehicle1">Dark blue slacks <b>(L)</b></label><p></p>
-			
-			<input type="submit" value="Submit">
 		</form>
 		
 	</body>
 	
 	
-</html>				
+</html>		
