@@ -1,170 +1,101 @@
-<!DOCTYPE html>
-
 <html>
 	<head>
-		<script>
-			function BSHM() {
-				window.location.href = "bshm.html";
-			}
-			
-			function BSTM() {
-				window.location.href = "bstm.html"
-			}
-			
-			function BSBA() {
-				window.location.href = "bsba.html"
-			}
-			
-			function BSIT() {
-				window.location.href = "bsit.html"
-			}
-			
-			function BSCS() {
-				window.location.href = "bscs.html"
-			}
-			
-			function BSCPE() {
-				window.location.href = "bscpe.html"
-			}
-			
-			function BACOMM() {
-				window.location.href = "bacomm.html"
-			}
-		</script>
-		
 		<style>
-			body {
-			background: url(https://cdn.discordapp.com/attachments/1150585030830203023/1184139858206277712/bck2.jpg?ex=658ae32e&is=65786e2e&hm=de36c594c246fc4ff6b35365ef756c75e748855ded92a1112f6e3e6ad87fdd43&);
-			background-repeat: no-repeat;
-			background-size: cover;
-			min-height: 100vh;
-			font-family: sans-serif;
+		 body {
+      background: url(https://cdn.discordapp.com/attachments/1155143207181619262/1184163005462753290/Untitled18_20231213000046.png?ex=658af8bd&is=657883bd&hm=e6a86eb41a5ff89e9e1915bcc4bec5d57b84aff473a3806a5ee279b15a0aeef3&);
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: sans-serif;
+    }
+
+    p {
+      color: #FFF;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 20px; /* Adjust the margin as needed */
+    }
+
+    button {
+      font-size: 16px;
+      padding: 10px 20px;
+      width: 500px;
+      height: 40px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 10px; /* Adjust the margin as needed */
+      background-color: #ffff00;
+      color: #000;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    button:hover {
+      background-color: #3498db;
+      color: #000;
+    }
+
+    button:active {
+      background-color: #21618c;
+      color: #000;
+    }
+
+    @media (min-width: 600px) {
+      .button-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+ 
+ <table>
+     
+ </table>
+  <center style="position: relative; top: 205px;">
+    <div id="sti-logo"></div>
+    <p></p>
+    <p></p>
+    <p><h1>Select your course</h1></p>
+    <div class="button-container">
+      <button onclick="BSHM()">BS In Hospitality Management</button>
+      <button onclick="BSTM()">BS In Tourism Management</button>
+      <button onclick="BSBA()">BS In Business Administration</button>
+      <button onclick="BSIT()">BS In Information Technology</button>
+      <button onclick="BSCS()">BS In Computer Science</button>
+      <button onclick="BSCPE()">BS In Computer Engineering</button>
+      <button onclick="BACOMM()">BA In Communication</button>
+    </div>
+    <button onclick="history.back()">Back</button>
+  </center>
+		 <script>
+		     function BSHM() {
+		         window.location.href = "bshm.html";
+		     }
+		     function BSTM() {
+		         window.location.href = "bstm.html";
+		     }
+             function BSBA() {
+				window.location.href = "bsba.html";
+			}
+             function BSIT() {
+				window.location.href = "bsit.html";
+			}
+             function BSCS() {
+				window.location.href = "bscs.html";
+			}
+             function BSCPE() {
+				window.location.href = "bscpe.html";
+			}
+             function BACOMM() {
+				window.location.href = "bacomm.html";
 			}
 			
-			#navbar {
-			width: 100%;
-			background-color: #FFFFFF;
-			padding: 2px;
-			}
-			
-			#navbar ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-			}
-			
-			#navbar li {
-			float: left;
-			margin-right: 20px;
-			}
-			
-			#navbar li a {
-			color: #202020;
-			display: block;
-			padding: 8px;
-			text-decoration: none;
-			}
-			
-			#navbar li a:hover {
-			background-color: #202020;
-			color: #FFFFFF;
-			}
-			
-			#sti-logo {
-			margin-top: 10pt;
-			margin-left: 1200px;
-			background-image: url(https://upload.wikimedia.org/wikipedia/en/1/1f/Systems_Technology_Institute.png);
-			background-repeat: no-repeat;
-			background-size: contain; 
-			height: 161px;
-			width: 200px; 
-			}
-			
-			form {
-			float: right;
-			}
-			
-			label {
-			background-color: rgba(255, 255, 255, 0);
-			}
-			
-			input[type="text"],
-			select {
-			width: 500px;
-			padding: 10px;
-			margin-bottom: 15px;
-			display: block;
-			}
-			
-			select {
-			width: 500px;
-			cursor: pointer;
-			}
-			
-			button {
-			font-size: 16px;
-			padding: 10px 20px;
-			width: 249px;
-			border: none;
-			border-radius: 10px;
-			cursor: pointer;
-			margin-top: 10px;
-			background-color: #3498db;
-			color: #000;
-			transition: background-color 0.3s, color 0.3s;
-			}
-			
-			button:hover {
-			background-color: #ffff00;
-			color: #000;
-			}
-			
-			button:active {
-			background-color: #21618c;
-			color: #000;
-			}
-			
-			input[type=submit] {
-  			font-size: 16px;
-			width: 249px;
-  			background-color: #3498db;
-  			color: #000;
-  			padding: 10px 20px;
-		 	height: 40px;
-			border: none;
-			border-radius: 10px;
-			cursor: pointer;
-			}
-			input[type=submit]:hover {
-			background-color: #ffff00;
-			color: #000; 
-			}
-		</style>
-	</head>
-	
-	<body>
-		<div id="navbar">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="faq.html">FAQ</a></li>
-				<li><a href="sizeguide.html">Size Guide</a></li>
-			</ul>
-		</div>
-		
-		<div id="sti-logo"></div>
-		<p></p>
-		<p></p>
-		
-		<p style="position: relative; top: 135px; right: -1050px;">Select your course.</p>
-		
-		<button onclick="BSHM()" style="position: relative; right: -1050px; top: 120px;">BS In Hospitality Management</button>
-		<button onclick="BSTM()" style="position: relative; right: -1050px; top: 120px;">BS In Tourism Management</button>
-		<button onclick="BSBA()" style="position: relative; right: -545px; top: 190px;">BS In Business Administration</button>
-		<button onclick="BSIT()" style="position: relative; right: -545px; top: 190px;">BS In Information Technology</button>
-		<button onclick="BSCS()" style="position: relative; right: -40px; top: 240px;">BS In Computer Science</button>
-		<button onclick="BSCPE()" style="position: relative; right: -40px; top: 240px;">BS In Computer Engineering</button>
-		<button onclick="BACOMM()" style="position: relative; right: -1150px; top: 240px;">BA In Communication</button>
+  </script>	
 		
 	</body>
 </html>
